@@ -30,64 +30,108 @@
 }
 
 /* Common */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+.container {
+  width: 1278px;
+  margin: 0 auto;
+  border: 1px solid #f00;
 }
 
 /* Header */
 .header {
+  padding: 40px 0;
   background-color: #66D1FF;
 
+
+
 }
 
-.header-button {
-  color: #060D10;
-  font-size: 24px;
-  line-height: 29.26px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.header-b {
-  color: #060D10;
-  font-size: 28px;
-  line-height: 34px;
-  font-weight: 500;
-  font-style: normal;
+.header-wrap {
   display: flex;
   align-items: center;
-  text-align: center;
-
+  justify-content: space-around;
 }
+
+
+
+
 
 /* Promo */
-.promo-h1 {
-  font-family: 'Oswald',sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 89px;
-  color: #FFFFFF;
-  text-shadow: 1px 1px 2px #060D10;
-}
+.promo {
+  text-align: center;
+  color: #fff;
+  background-image: url(../images/promo.png);
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-.promo-p {
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 32px;
-line-height: 39px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #FFFFFF;
-text-shadow: 1px 1px 2px #060D10;
 }
-
-/* Lead */
 
 /* Options */
+.options {
+  text-align: center;
 
-/* Order */
+
+}
+
+.options-item {
+
+  flex-wrap: nowrap;
+}
+
+/* Go */
+.go {
+  text-align: center;
+}
+.go-wrap {
+
+  display: flex;
+}
 
 /* Footer */
+.footer {
+
+  background-color: #000000;
+
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright {
+  color: #fff;
+}
+
+.social {
+  color: #fff;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+.social-item {
+  margin-left: 20px;
+}
+
+.social-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
